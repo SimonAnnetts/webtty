@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"typescript.tsdk": "src/WebTty.Hosting/Client/node_modules/typescript/lib"
+	}
+}

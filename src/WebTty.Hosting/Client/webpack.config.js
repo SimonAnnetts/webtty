@@ -80,6 +80,10 @@ module.exports = (_, argv) => {
                 "/tty": "http://localhost:5000",
             },
         },
+
+        output: {
+            hashFunction: "sha512"
+        }
     }
 
     return config

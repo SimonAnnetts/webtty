@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using WebTty.Hosting.Models;
 using WebTty.Hosting.Services;
 
@@ -20,7 +21,7 @@ namespace WebTty.Hosting.Pages
             _options = new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-                IgnoreNullValues = true,
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
             };
         }
         public string Config { get; set; }
